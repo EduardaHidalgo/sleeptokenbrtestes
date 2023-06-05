@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Literata", serif;
+}
+
+/* MENU PRINCIPAL */
+.menu-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: url('../assets/img/worship.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.foto-banda {
+    width: 100%;
+    height: 80vh;
+}
+
+#links #link-container a {
+    color: red;
+}
+
+#links #link-container a:hover {
+    color: black;
+}
+
+.logo-banda {
+    width: 75%;
+}
+
+@media (min-width: 768px) {
+    .logo-banda {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-banda {
+        width: 25%;
+    }
+}
+@media (min-width: 720px) {
+    .menu-container{
+        height: 75vh;
+    }
+
+}
+.superiorHome{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+/* SOBRE A BANDA*/
+.superior {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    background-color: white;
+    transition: background-color 0.3s;
+}
+.superior-voltar{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+    margin-right: -210px;
+}
+.superior-voltar > .voltar {
+    color: rgb(153, 153, 153);
+    padding: 10px 40px;
+    border: solid rgb(153, 153, 153) 2px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* .voltar:hover {
+    background-color: rgb(153, 153, 153);
+    color: white;
+    border: solid rgb(104, 104, 104) 2px;
+} */
+
+.superior-titulo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.superior-inutil{
+    flex: 1;
+}
+
+
+.sobreAbanda{
+    width: 100%;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.308);
+}
+
+#tituloSobre {
+    font-size: 35px;
+}
+
+.icone {
+    width: 55px;
+}
+.textoPrincipal{
+    margin: 10px 210px;
+    text-align: justify;
+}
+.lore{
+    margin-top: 30px;
+}
+
+.lore > h2 {
+    padding: 10px 0px;
+}
+/* RODAPÉ */
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+    margin: 100px 0px 5px 0px;
+    opacity: 60%;
+}
