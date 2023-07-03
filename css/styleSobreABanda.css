@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Literata", serif;
+}
+.tituloSobre{
+    font-size: 35px;
+    font-weight: bold;
+}
+.superior {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+.superior-voltar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+    margin-right: -210px;
+}
+.superior-voltar>.voltar {
+    color: rgb(153, 153, 153);
+    padding: 10px 40px;
+    border: solid rgb(153, 153, 153) 2px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.superior-titulo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.superior-inutil {
+    flex: 1;
+}
+.sobreAbanda {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.308);
+}
+#tituloSobre {
+    font-size: 35px;
+}
+.icone {
+    width: 55px;
+}
+.textoPrincipal {
+    margin: 10px 210px;
+    text-align: justify;
+}
+.lore {
+    margin-top: 30px;
+}
+.lore>h2 {
+    padding: 10px 0px;
+}
+footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+    margin: 100px 0px 5px 0px;
+    opacity: 60%;
+}
+
+/*  RESPONSIVIDADE */
+
+@media (min-width: 300px) {
+    .superior-voltar {
+      margin-left: 20px;
+      margin-right:0px; 
+    }  
+    .voltar {
+      display: none;
+    } 
+    .voltar-mobile {
+      display: block;
+      color: rgb(153, 153, 153);
+      padding: 5px 20px;
+      border: solid rgb(153, 153, 153) 2px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    .superior-titulo {
+      flex: 5;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .superior-inutil {
+        flex: 1;
+    }
+  
+    #tituloSobre {
+      font-size: 24px;
+    }
+    .icone {
+      width: 35px;
+        }
+    .textoPrincipal {
+      margin: 5px 40px;
+      font-size: 15px;
+    }
+  }
+@media (min-width: 1000px) {
+    .sobreAbanda {
+        max-height: 800px;
+        object-fit: cover;
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.308);
+    }
+    #tituloSobre {
+        font-size: 30px;
+    }
+    .superior-voltar {
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+}
+@media (min-width: 600px) {
+    #tituloSobre {
+        font-size: 30px;
+    }
+    .icone {
+        width: auto;
+        max-height: 40px;
+    }
+    .superior-titulo {
+        flex: 3;
+    }
+    .superior-inutil {
+        flex: 1;
+    }
+    .superior-voltar {
+        flex: 1;
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .superior-voltar>.voltar {
+        padding: 5px 20px;
+    }
+    .textoPrincipal {
+        margin: 10px 110px;
+    }
+}

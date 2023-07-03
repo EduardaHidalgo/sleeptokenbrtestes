@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Literata", serif;
+}
+.tituloSobre{
+    font-size: 35px;
+    font-weight: bold;
+}
+.superior {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+.superior-voltar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+    margin-right: -210px;
+}
+.superior-voltar>.voltar {
+    color: rgb(153, 153, 153);
+    padding: 10px 40px;
+    border: solid rgb(153, 153, 153) 2px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.superior-titulo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.superior-inutil {
+    flex: 1;
+}
+.sobreAbanda {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.308);
+}
+#tituloSobre {
+    font-size: 35px;
+}
+.icone {
+    width: 55px;
+}
+
+.video1,
+.video2,
+.video3,
+.video4,
+.video5,
+.video6,
+.video7,
+.video8,
+.video9,
+.video10,
+.video11,
+.video12{
+    display: none;
+}
+.videos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+/* TOKENS */
+.token-container{
+    display: flex;
+    margin: 20px 30px 10px 30px;
+}
+.token-flyer{
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #d6d6d6;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178); */
+}
+.top-flyer{
+    display: flex;
+    flex-direction: column;
+    background-color: #292824;
+    height: 35%;
+    border-radius: 30px 30px 0px 0px;
+}
+.icone-flyer{
+    display: flex;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 50px;
+    justify-content: center;
+}
+.icone-img-flyer{
+    width: 120px;
+    height: auto;
+    border: solid 3px #292824;
+    border-radius: 50%;
+}
+.titulo-flyer{
+    text-align: center;
+    margin-top: 10px;
+}
+.sub-titulo-flyer{
+    text-align: center;
+    font-size: 13px;
+}
+.alfa-flyer{
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.play-flyer{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.play-button1,
+.play-button2,
+.play-button3,
+.play-button4,
+.play-button5,
+.play-button6,
+.play-button7,
+.play-button8,
+.play-button9,
+.play-button10,
+.play-button11,
+.play-button12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #292824;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+}
+.iconePlay {
+    color: #d6d6d6;
+}
+.titulo-play{
+    color: #d6d6d6;
+}
+.swiper-button-next{
+    color: black;
+}
+.swiper-button-prev{
+    color: black;
+}
+.swiper-scrollbar{
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+    margin: 100px 0px 5px 0px;
+    opacity: 60%;
+}
+
+/*  RESPONSIVIDADE */
+
+@media (min-width: 300px) {
+    .superior-voltar {
+      margin-left: 20px;
+      margin-right:0px; 
+    }  
+    .voltar {
+      display: none;
+    } 
+    .voltar-mobile {
+      display: block;
+      color: rgb(153, 153, 153);
+      padding: 5px 20px;
+      border: solid rgb(153, 153, 153) 2px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    .superior-titulo {
+      flex: 5;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .superior-inutil {
+        flex: 1;
+    }
+  
+    #tituloSobre {
+      font-size: 24px;
+    }
+    .icone {
+      width: 35px;
+        }
+    .textoPrincipal {
+      margin: 5px 40px;
+      font-size: 15px;
+    }
+  }
+@media (min-width: 1000px) {
+    .sobreAbanda {
+        max-height: 400px;
+        object-fit: cover;
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.199);
+    }
+    #tituloSobre {
+        font-size: 30px;
+    }
+    .superior-voltar {
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+}
+@media (min-width: 600px) {
+    #tituloSobre {
+        font-size: 30px;
+    }
+    .icone {
+        width: auto;
+        max-height: 40px;
+    }
+    .superior-titulo {
+        flex: 3;
+    }
+    .superior-inutil {
+        flex: 1;
+    }
+    .superior-voltar {
+        flex: 1;
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .superior-voltar>.voltar {
+        padding: 5px 20px;
+    }
+    .textoPrincipal {
+        margin: 10px 110px;
+    }
+}
